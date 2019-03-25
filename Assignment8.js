@@ -1,16 +1,16 @@
 class MySet {
-  constructor(){
-    this._set1 = [];
+  constructor(valueArray){
+    this._set1 = valueArray;
     }
-    addNumber(number){
-      this._set1.push(number);
+    addNumber(){
+      this._set1.push();
     }
-    removeNumber(number1){
-      this._set1.remove(number1);
+    removeNumber(){
+      this._set1.remove();
     }
 }
-let my_set = new MySet('1, 2, 3, 4');
-let my_set2 = new MySet('5, 6, 7, 8');
+let my_set = new MySet([1, 2, 3, 4]);
+let my_set2 = new MySet([5, 6, 7, 8]);
 let final_set = new MySet();
 final_set.addNumber('9');
 final_set.removeNumber('4');
